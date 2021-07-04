@@ -1,3 +1,15 @@
+-- Filling 'emp_manager' with data about employees, the number of the department they are working in, and their managers.
+-- The query skeleton looks like this:
+
+-- Insert INTO emp_manager SELECT
+-- U.*
+-- FROM
+--                 (A)
+-- UNION (B) UNION (C) UNION (D) AS U;
+
+-- Assigning employee number 110022 as a manager to all employees from 10001 to 10020 (this is subset A), and employee number 110039 as a manager to all employees from 10021 to 10040 (this must be subset B).
+-- Assigning employee number 110039 as a manager to employee 110022, assigning employee 110022 as a manager to employee 110039.
+
 INSERT INTO emp_manager
 SELECT 
     u.*
